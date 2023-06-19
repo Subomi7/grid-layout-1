@@ -1,0 +1,64 @@
+.container {
+  resize: both;
+  overflow: auto;
+  display: grid;
+  gap: 20px;
+  padding: 4px;
+  background-color: aliceblue;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    'Header Header Header Header Header'
+    'Sidebar Sidebar nav nav nav'
+    'Sidebar Sidebar Article Article Article'
+    'Sidebar Sidebar Article Article Article'
+    'Footer Footer Footer Footer Footer';
+}
+
+.room {
+  border: 1px solid;
+  font-size: 0.7rem;
+  text-align: center;
+  border-radius: 1.2rem;
+  font-style: sans-serif;
+}
+
+p {
+  margin: 12px auto 24px;
+  font-size: larger;
+}
+
+#Header {
+  grid-area: Header;
+  background: rgb(62, 107, 62);
+  color: white;
+  font-size: 1.5rem;
+}
+
+#Sidebar {
+  grid-area: Sidebar;
+  font-size: 1.5rem;
+  background: rgb(44, 44, 92);
+  color: white;
+}
+
+#nav {
+  grid-area: nav;
+  font-size: 1.5rem;
+  background: rgb(137, 88, 228);
+  color: white;
+}
+
+#Article {
+  grid-area: Article;
+  font-style: bigger;
+  background: black;
+  color: white;
+}
+
+#Footer {
+  grid-area: Footer;
+  background: grey;
+  color: white;
+  font-size: 1.5rem;
+}
